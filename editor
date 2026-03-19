@@ -14,9 +14,9 @@
   },
   "190": {
     "inputs": {
-      "image": "20241101_171647.jpg"
+      "image": "%%B64IMAGE%%"
     },
-    "class_type": "LoadImage",
+    "class_type": "LoadImageFromBase64",
     "_meta": {
       "title": "Load Image"
     }
@@ -187,7 +187,7 @@
   },
   "210": {
     "inputs": {
-      "text": "Change the floor to hardwood.",
+      "text": "%%PROMPT%%",
       "clip": [
         "200",
         0
