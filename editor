@@ -16,7 +16,7 @@
     "inputs": {
       "image": "%%B64IMAGE%%"
     },
-    "class_type": "LoadImageFromBase64",
+    "class_type": "ETN_LoadImageBase64",
     "_meta": {
       "title": "Load Image"
     }
