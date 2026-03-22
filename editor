@@ -1,16 +1,26 @@
+
 {
   "136": {
     "inputs": {
       "filename_prefix": "ComfyUI",
-      "images": ["194", 0]
+      "images": [
+        "194",
+        0
+      ]
     },
     "class_type": "SaveImage",
-    "_meta": {"title": "Save Image"}
+    "_meta": {
+      "title": "Save Image"
+    }
   },
   "190": {
-    "inputs": {"image": "%%B64IMAGE%%"},
+    "inputs": {
+      "image": "%%B64IMAGE%%"
+    },
     "class_type": "ETN_LoadImageBase64",
-    "_meta": {"title": "Load Image"}
+    "_meta": {
+      "title": "Load Image"
+    }
   },
   "194": {
     "inputs": {
@@ -18,24 +28,38 @@
       "clean_processes": true,
       "clean_dlls": true,
       "retry_times": 3,
-      "anything": ["195", 0]
+      "anything": [
+        "195",
+        0
+      ]
     },
     "class_type": "RAMCleanup",
-    "_meta": {"title": "🎈RAM-Cleanup"}
+    "_meta": {
+      "title": "🎈RAM-Cleanup"
+    }
   },
   "195": {
     "inputs": {
       "offload_model": true,
       "offload_cache": true,
-      "anything": ["202", 0]
+      "anything": [
+        "202",
+        0
+      ]
     },
     "class_type": "VRAMCleanup",
-    "_meta": {"title": "🎈VRAM-Cleanup"}
+    "_meta": {
+      "title": "🎈VRAM-Cleanup"
+    }
   },
   "199": {
-    "inputs": {"vae_name": "ae.safetensors"},
+    "inputs": {
+      "vae_name": "ae.safetensors"
+    },
     "class_type": "VAELoader",
-    "_meta": {"title": "Load VAE"}
+    "_meta": {
+      "title": "Load VAE"
+    }
   },
   "200": {
     "inputs": {
@@ -45,36 +69,66 @@
       "device": "default"
     },
     "class_type": "DualCLIPLoader",
-    "_meta": {"title": "DualCLIPLoader"}
+    "_meta": {
+      "title": "DualCLIPLoader"
+    }
   },
   "201": {
-    "inputs": {"conditioning": ["210", 0]},
+    "inputs": {
+      "conditioning": [
+        "210",
+        0
+      ]
+    },
     "class_type": "ConditioningZeroOut",
-    "_meta": {"title": "ConditioningZeroOut"}
+    "_meta": {
+      "title": "ConditioningZeroOut"
+    }
   },
   "202": {
     "inputs": {
-      "samples": ["209", 0],
-      "vae": ["199", 0]
+      "samples": [
+        "209",
+        0
+      ],
+      "vae": [
+        "199",
+        0
+      ]
     },
     "class_type": "VAEDecode",
-    "_meta": {"title": "VAE Decode"}
+    "_meta": {
+      "title": "VAE Decode"
+    }
   },
   "203": {
     "inputs": {
-      "pixels": ["190", 0],
-      "vae": ["199", 0]
+      "pixels": [
+        "190",
+        0
+      ],
+      "vae": [
+        "199",
+        0
+      ]
     },
     "class_type": "VAEEncode",
-    "_meta": {"title": "VAE Encode"}
+    "_meta": {
+      "title": "VAE Encode"
+    }
   },
   "204": {
     "inputs": {
       "guidance": 2.5,
-      "conditioning": ["206", 0]
+      "conditioning": [
+        "206",
+        0
+      ]
     },
     "class_type": "FluxGuidance",
-    "_meta": {"title": "FluxGuidance"}
+    "_meta": {
+      "title": "FluxGuidance"
+    }
   },
   "205": {
     "inputs": {
@@ -82,15 +136,25 @@
       "weight_dtype": "default"
     },
     "class_type": "UNETLoader",
-    "_meta": {"title": "Load Diffusion Model"}
+    "_meta": {
+      "title": "Load Diffusion Model"
+    }
   },
   "206": {
     "inputs": {
-      "conditioning": ["210", 0],
-      "latent": ["203", 0]
+      "conditioning": [
+        "210",
+        0
+      ],
+      "latent": [
+        "203",
+        0
+      ]
     },
     "class_type": "ReferenceLatent",
-    "_meta": {"title": "ReferenceLatent"}
+    "_meta": {
+      "title": "ReferenceLatent"
+    }
   },
   "209": {
     "inputs": {
@@ -100,20 +164,39 @@
       "sampler_name": "euler",
       "scheduler": "simple",
       "denoise": 1,
-      "model": ["205", 0],
-      "positive": ["204", 0],
-      "negative": ["201", 0],
-      "latent_image": ["203", 0]
+      "model": [
+        "205",
+        0
+      ],
+      "positive": [
+        "204",
+        0
+      ],
+      "negative": [
+        "201",
+        0
+      ],
+      "latent_image": [
+        "203",
+        0
+      ]
     },
     "class_type": "KSampler",
-    "_meta": {"title": "KSampler"}
+    "_meta": {
+      "title": "KSampler"
+    }
   },
   "210": {
     "inputs": {
       "text": "%%PROMPT%%",
-      "clip": ["200", 0]
+      "clip": [
+        "200",
+        0
+      ]
     },
     "class_type": "CLIPTextEncode",
-    "_meta": {"title": "CLIP Text Encode (Positive Prompt)"}
+    "_meta": {
+      "title": "CLIP Text Encode (Positive Prompt)"
+    }
   }
 }
