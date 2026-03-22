@@ -2,7 +2,7 @@
   "136": {
     "inputs": {
       "filename_prefix": "ComfyUI",
-      "images": ["194", 0]
+      "images": ["212", 0]
     },
     "class_type": "SaveImage",
     "_meta": {"title": "Save Image"}
@@ -27,7 +27,7 @@
     "inputs": {
       "offload_model": true,
       "offload_cache": true,
-      "anything": ["212", 0]
+      "anything": ["202", 0]
     },
     "class_type": "VRAMCleanup",
     "_meta": {"title": "🎈VRAM-Cleanup"}
