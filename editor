@@ -2,7 +2,7 @@
   "136": {
     "inputs": {
       "filename_prefix": "ComfyUI",
-      "images": ["212", 0]
+      "images": ["194", 0]
     },
     "class_type": "SaveImage",
     "_meta": {"title": "Save Image"}
@@ -115,16 +115,5 @@
     },
     "class_type": "CLIPTextEncode",
     "_meta": {"title": "CLIP Text Encode (Positive Prompt)"}
-  },
-  "212": {
-    "inputs": {
-      "upscale_method": "lanczos",
-      "width": "%%WIDTH%%",
-      "height": "%%HEIGHT%%",
-      "crop": "disabled",
-      "image": ["202", 0]
-    },
-    "class_type": "ImageScale",
-    "_meta": {"title": "Resize to Original"}
   }
 }
