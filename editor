@@ -103,7 +103,7 @@
   "203": {
     "inputs": {
       "pixels": [
-        "190",
+        "211",
         0
       ],
       "vae": [
@@ -196,6 +196,18 @@
     "class_type": "CLIPTextEncode",
     "_meta": {
       "title": "CLIP Text Encode (Positive Prompt)"
+    }
+  },
+  "211": {
+    "inputs": {
+      "image": [
+        "190",
+        0
+      ]
+    },
+    "class_type": "FluxKontextImageScale",
+    "_meta": {
+      "title": "Scale for Flux Kontext"
     }
   }
 }
